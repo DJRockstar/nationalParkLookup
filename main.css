@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://images.unsplash.com/photo-1527549993586-dff825b37782?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+ul {
+    margin: 10px auto;
+    list-style: none;
+    width: 40%;
+    background: rgb(221, 243, 226,0.8);
+    padding: 10px;
+    box-shadow: 1px 1px 10px 2px #aaa;
+}
+
+li{
+    padding: 8px;
+}
+
+form{
+    margin: 0 auto;
+    background: rgba(0,0,0,0.2);
+    width: 80%;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: center;
+}
