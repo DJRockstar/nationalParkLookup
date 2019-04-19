@@ -7,26 +7,41 @@ body {
     background-size: cover;
 }
 
+input{
+    height: 25px;
+    font-size: 16px;
+}
+
+input[type="text"]{
+    width: 28%;
+}
+
+input[type="number"]{
+    width: 6%;
+    text-align: center;
+}
 
 ul {
     margin: 10px auto;
     list-style: none;
     width: 40%;
-    background: rgb(221, 243, 226,0.8);
+    background: rgb(221, 243, 226, 0.8);
     padding: 10px;
     box-shadow: 1px 1px 10px 2px #aaa;
 }
 
-li{
+li {
     padding: 8px;
 }
 
-form{
+form {
     margin: 0 auto;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     width: 80%;
     height: 35px;
     padding-top: 5px;
     padding-left: 5px;
     text-align: center;
 }
+
+

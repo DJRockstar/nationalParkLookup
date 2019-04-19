@@ -13,6 +13,7 @@ function displayResults(responseJson){
     for(let i = 0; i < $("#js-max-results").val(); i++){
         $("#results").append(`
          <ul id="results-list">
+        		<li class="stateName"><strong>${responseJson.data[i].states}</strong></li>
             <li class="park-name"><strong>${responseJson.data[i].fullName}</strong></li>
             <li class="description"><strong>Description:</strong> ${responseJson.data[i].description}</li>
             <li class="park-link"><a href="${responseJson.data[i].url}">Link to Park</a></li>
@@ -44,7 +45,7 @@ function getInfo(stateCode, maxResults=10){
 function watchForm(){
     $("form").on("submit", (e)=>{
         e.preventDefault();
-        const stateCode = $("select").val();
+        const stateCode = $(".state-code").val();
         const maxResults = $("#js-max-results").val();
         getInfo(stateCode, maxResults);
     })
